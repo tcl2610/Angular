@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <!-- nav bar  -->
+  <app-nav-bar></app-nav-bar>
+  <!-- nav bar  -->
+
+  <!-- Title Category -->
+  <div class="row title-category">
+    <div class="col-12">
+      <span>{{ titleCategory }}</span>
+    </div>
+  </div>
+  <!-- Title Category -->
+
+  <!-- top selling product -->
+  <app-tr-slider></app-tr-slider>
+  <!-- top selling product -->
+
+  <!-- app-tr-filter-panel -->
+  <app-tr-filter-panel></app-tr-filter-panel>
+  <!-- app-tr-filter-panel -->
+
+  <div class="container-tr-card-hor">
+    <!-- card item products hori -->
+    <app-tr-card-hor
+      *ngFor="let item of products"
+      [product]="item"
+    ></app-tr-card-hor>
+    <!-- card item products hori -->
+
+    <div class="pagination-component">
+      <app-pagination-component></app-pagination-component>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="container-fluid all-content">
+  <div class="row">
+    <div class="col">
+      <i class="material-icons icon-back" routerLink="/home">
+        arrow_back_ios
+      </i>
+
+      <div class="row info-sign-in">
+        <div class="col-text-welcome">
+          <h2>Sign In</h2>
+        </div>
+
+        <form class="form-sign-in" [formGroup]="signInForm">
+          <!-- Grid row -->
+          <div class="form-group row">
+            <!-- Default input -->
+
+            <div class="col-sm-10">
+              <input
+                mdbInput
+                type="email"
+                class="form-control"
+                id="inputEmail3"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <!-- Grid row -->
+
+          <!-- Grid row -->
+          <div class="form-group row">
+            <!-- Default input -->
+
+            <div class="col-sm-10">
+              <input
+                mdbInput
+                type="password"
+                class="form-control"
+                id="inputPassword3"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <!-- Grid row -->
+        </form>
+        <!-- Default horizontal form -->
+
+        <div class="btn-sign-in">
+          <button class="btn btn-primary">Sign in</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="img-login">
+        <img src="../../assets/image_sign_in.png" />
+      </div>
+    </div>
+  </div>
+</div>
